@@ -1,0 +1,36 @@
+
+#include <iostream>
+
+using namespace std;
+
+
+
+int main()
+{
+
+	int total, num;
+	int price, pm;
+	int cac_total = 0;
+
+	cout << "Total price: ";
+	cin >> total;
+
+	cout << "Number of objects: ";
+	cin >> num;
+
+	for (int i = 0; i < num; i++) {
+	cout << "Price, number: ";
+	cin >> price >> pm;
+	cac_total += price * pm;
+}
+	if (total == cac_total) {
+		cout << "yes";
+	}
+	else {
+		cout << "no";
+	}
+
+	return 0;
+
+	
+}
